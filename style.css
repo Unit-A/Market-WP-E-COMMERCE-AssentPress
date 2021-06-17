@@ -1,0 +1,124 @@
+/*
+Theme Name: AssentPress
+Theme URI: https://themearile.com/assentpress-theme/
+Template: consultstreet
+Author: ThemeArile
+Author URI: https://themearile.com
+Description: AssentPress is an elegant and responsive multi-purpose WordPress news and blog theme with a clean design and modern look. It is well suited for news, blog, editorial, personal portfolio, photography, business website. This theme is perfectly customizable and gives a lot of possibilities. As well as being fully compatible with Elementor, AssentPress brings plenty of customization possibilities like access to all Google Fonts, logo upload, advanced typography, header image, sticky navigation, bootstrap 4 framework, translation ready (WPML, Polylang). AssentPress is also 100% responsive and mobile-ready, making sure the operation is smooth and stable across all devices. It is also optimized for speed and SEO, as well as fully compatible with all modern web browsers. Even the theme supports popular free and premium WordPress plugins such as Elementor, Yoast SEO, WooCommerce, Contact Form 7, Jetpack, Google Analytics, and much more. You can build pages using the best Elementor page builder, edit and update page designs as per the requirement. Check the demo of ConsultStreet Pro https://themearile.com/consultstreet-theme-pro/.
+Version: 1.2
+Tested up to: 5.7.2
+Requires PHP: 5.6
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: assentpress
+Tags: one-column, two-columns ,right-sidebar, flexible-header, custom-background, custom-header, custom-menu, editor-style, featured-images, footer-widgets, post-formats, theme-options, threaded-comments, rtl-language-support, translation-ready, full-width-template, custom-logo, blog, e-commerce, portfolio
+*/
+
+/*--------------------------------------------------
+=>> Body Custom Background Css
+--------------------------------------------------*/
+
+body.custom-background .theme-bg-dark,
+body.custom-background .theme-bg-default, 
+body.custom-background .theme-blog.theme-bg-grey {
+    background-color: transparent !important;
+}
+
+/*--------------------------------------------------
+=>> Theme Blog Area List View - Homepage Two News
+--------------------------------------------------*/
+
+.theme-blog.list-view-news .post {
+	border: none;
+	background-color: transparent; 
+    box-shadow: none;
+	padding: 0;
+}
+.theme-blog.list-view-news .post-thumbnail { 
+	width: 13.625rem; 
+	margin: 0 1.875rem 0 0;
+	box-shadow: 0 16px 38px -12px rgba(0,0,0,.56);
+} 
+
+@media (min-width: 1200px) {
+	.theme-blog.list-view-news .container-full .post .post-thumbnail {
+		width: 20rem;
+	}
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+	.theme-blog.list-view-news .post-thumbnail { 
+		width: 13.625rem; 
+	} 
+}
+@media (max-width: 500px) { 
+	.theme-blog.list-view-news .post {
+		display: block;
+		align-items: normal;
+	}
+	.theme-blog.list-view-news .post-thumbnail { 
+		width: 100%; 
+		margin: 0 0 1.25rem;
+	}
+}
+
+/*--------------------------------------------------
+=>> Theme Blog Magazine View Style
+--------------------------------------------------*/
+
+.theme-blog.list-view-news.magazine-view {
+	padding-top: 3.125rem;
+}
+.theme-blog.list-view-news.magazine-view .post {
+	background-color: #fff;
+	padding: 1.25rem;
+	box-shadow: 2px 5px 20px rgb(0 0 0 / 12%);
+}
+.theme-blog.list-view-news.magazine-view .post-thumbnail {
+    width: auto;
+    flex-basis: 50%;
+    max-width: 50%;
+	box-shadow: none;
+}
+.theme-blog.list-view-news.magazine-view .post .media-body.post-content {
+	overflow: hidden;
+}
+.theme-blog.list-view-news.magazine-view .more-link {
+	background-color: transparent;
+    color: #000;
+    padding: 0.313rem 1.125rem;
+}
+.theme-blog.list-view-news.magazine-view .more-link:after {
+	display: none;
+}
+.theme-blog.list-view-news.magazine-view .more-link:hover, 
+.theme-blog.list-view-news.magazine-view .more-link:focus {
+	background-color: #000;
+	border: 2px solid #000;
+    color: #fff !important;
+}
+.theme-blog.list-view-news.magazine-view .sidebar .widget {
+    -webkit-box-shadow: 2px 5px 20px rgb(0 0 0 / 12%);
+    -moz-box-shadow: 2px 5px 20px rgb(0 0 0 / 12%);
+    box-shadow: 2px 5px 20px rgb(0 0 0 / 12%);
+}
+@media (max-width: 500px){
+	.theme-blog.list-view-news.magazine-view .post-thumbnail {
+		flex-basis: 100%;
+		max-width: 100%;
+	}
+}
+/*--------------------------------------------------
+=>> Theme Page Header Area
+--------------------------------------------------*/
+.theme-page-header-area {
+    padding: 4rem 0 4rem 0;
+}
+
+/*Monsterwidget-textwidget*/
+.textwidget .wp-caption {
+	padding: 0;
+}
+.textwidget p > img {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}

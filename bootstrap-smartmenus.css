@@ -1,0 +1,139 @@
+/*
+Name: bootstrap-smartmenus.css
+*/
+
+/* Carets in collapsible mode (make them look like +/- buttons) */
+
+.m-right-auto {
+    margin-right: unset!important;
+    margin-left: auto;
+}
+.m-right-left-auto {
+	margin-right: auto;    
+	margin-left: auto !important;
+}
+
+/*Navbar Magazine Header*/
+.navbar.navbar-header-magazine {
+	background-color: #0f0f0f;
+}
+.navbar.navbar-header-magazine.header-fixed-top {
+	background-color: #fff;
+}
+.theme-header-magazine {
+	padding: 2.5rem 0;
+}
+.theme-header-magazine .col-lg-12 .site-branding-text {
+	text-align: center;
+}
+.theme-header-magazine .col-lg-12 .navbar-brand {
+	float: none;
+    display: block;
+    margin-right: 0;
+}
+.theme-header-magazine .col-lg-12 .navbar-brand img.custom-logo {
+    margin: 0 auto;
+}
+@media (max-width: 991px){
+.theme-header-magazine .navbar-brand .custom-logo {
+    max-width: 100%;
+}
+}
+
+.theme-header-magazine .site-branding-text {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+    display: block;
+    text-align: left;
+	overflow-wrap: break-word;
+}
+.theme-header-magazine .site-branding-text .site-title {
+    font-size: 2.8125rem;
+    line-height: 1.2;
+}
+.theme-header-magazine .site-branding-text .site-description {
+    padding-top: 0;
+}
+.theme-header-magazine .navbar-brand {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.navbar.navbar-header-magazine .nav .menu-item .nav-link {
+    color: #fff;
+}
+.navbar.navbar-header-magazine .woo-cart-block > a.cart-icon, 
+.navbar.navbar-header-magazine .theme-search-block a {
+    color: #fff;
+}
+.navbar.navbar-header-magazine .nav .themes-header-top .btn-border {
+    color: #fff;
+}
+.navbar.navbar-header-magazine.header-fixed-top .nav .menu-item .nav-link, 
+.navbar.navbar-header-magazine.header-fixed-top .nav a.cart-icon, 
+.navbar.navbar-header-magazine.header-fixed-top .nav .theme-search-block a {
+    color: #000;
+}
+.navbar.navbar-header-magazine .navbar-toggler {
+    border-color: rgba(255, 255, 255, 1);
+}
+.navbar.navbar-header-magazine.header-fixed-top .navbar-toggler {
+    border-color: rgba(0, 0, 0, 0.1);
+}
+.navbar.navbar-header-magazine .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.navbar.navbar-header-magazine.header-fixed-top .navbar-toggler-icon {
+	background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(1, 1, 47, 1)' stroke-width='3' stroke-linecap='square' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+@media (max-width: 991px) {
+	/*Navbar Magazine Header & Header Add Promotion*/
+	.header-add-promotion {
+		padding-top: 1.5rem;
+	}	
+	.navbar.navbar-header-magazine .navbar-toggler {
+		float: none;
+		text-align: center;
+		display: block;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+	}
+	.theme-header-magazine .navbar-brand {
+		display: block;
+		float: none;
+	}
+	.theme-header-magazine .navbar-brand .custom-logo {
+		margin: 0 auto;
+	}	
+	.theme-header-magazine .site-branding-text {
+		text-align: center;
+	}
+}
+@media (min-width: 992px) {	
+	/*Navbar Magazine Header*/
+	.navbar.navbar-header-magazine .nav {
+		margin-left: 0;
+	}
+	.navbar.navbar-header-magazine .nav .menu-item.active .nav-link {
+		color: #fff !important;
+	}	
+	.navbar.navbar-header-magazine .nav .menu-item .nav-link {
+		padding: 14px 1rem;
+	}	
+	.navbar.navbar-header-magazine .nav .themes-header-top {
+		padding: 8px 0;
+	}
+	.navbar.navbar-header-magazine .nav .dropdown-menu {
+		top: 56px !important;
+	}
+}
+
+/*Add Menu*/
+.navbar .nav .menu-item .nav-link.add-menu {
+    background-color: transparent;
+}
+.navbar .nav .menu-item .nav-link.add-menu:hover, 
+.navbar .nav .menu-item .nav-link.add-menu:focus {
+	color: #fff !important;
+}
+	
